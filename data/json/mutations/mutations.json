@@ -2204,6 +2204,7 @@
     "type": "mutation",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "id": "PATCHSKIN1",
     "name": { "str": "Patchwork Skin" },
     "points": 2,
@@ -2271,6 +2272,8 @@
   },
   {
     "type": "mutation",
+=======
+>>>>>>> parent of 59aa9b6dda (Small chimera mutation rework)
 =======
 >>>>>>> parent of 59aa9b6dda (Small chimera mutation rework)
 =======
