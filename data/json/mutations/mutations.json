@@ -1960,7 +1960,7 @@
     "ugliness": 3,
     "description": "A set of flexible green scales has grown to cover your body, acting as natural armor.  Somewhat reduces wet effects.",
     "types": [ "SKIN" ],
-    "category": [ "RAPTOR", "LIZARD" ],
+    "category": [ "CHIMERA", "RAPTOR", "LIZARD" ],
     "prereqs": [ "SKIN_ROUGH" ],
     "changes_to": [ "THICK_SCALES", "SLEEK_SCALES" ],
     "movecost_swim_modifier": 0.9,
@@ -2105,7 +2105,7 @@
     "bodytemp_modifiers": [ 250, 500 ],
     "bodytemp_sleep": 100,
     "description": "Light fur has grown to cover your entire body, providing slight protection from cold.",
-    "category": [ "SPIDER", "MOUSE" ],
+    "category": [ "CHIMERA", "SPIDER", "MOUSE" ],
     "types": [ "SKIN" ],
     "prereqs": [ "SKIN_ROUGH" ],
     "changes_to": [ "FUR", "FELINE_FUR", "LUPINE_FUR", "URSINE_FUR", "CHITIN_FUR" ]
@@ -2202,6 +2202,7 @@
   },
   {
     "type": "mutation",
+<<<<<<< HEAD
     "id": "PATCHSKIN1",
     "name": { "str": "Patchwork Skin" },
     "points": 2,
@@ -2269,6 +2270,8 @@
   },
   {
     "type": "mutation",
+=======
+>>>>>>> parent of 59aa9b6dda (Small chimera mutation rework)
     "id": "CHITIN",
     "name": { "str": "Chitinous Skin" },
     "points": 2,
@@ -3381,8 +3384,8 @@
     "id": "EATHEALTH_active",
     "name": { "str": "Hyper-Metabolism: burning" },
     "description": "You're burning calories like crazy to heal your wounds.",
+    "prereqs": [ "UNOBTAINABLE" ],
     "copy-from": "EATHEALTH",
-    "valid": false,
     "cost": 1,
     "time": 1,
     "hunger": true,
@@ -4246,7 +4249,7 @@
     "prereqs": [ "STR_UP", "STR_UP_2", "STR_UP_3", "STR_UP_4" ],
     "cancels": [ "SMALL", "SMALL2" ],
     "changes_to": [ "LARGE_OK", "HUGE" ],
-    "category": [ "URSINE", "CATTLE", "LIZARD", "CHIMERA" ],
+    "category": [ "URSINE", "CATTLE", "LIZARD" ],
     "passive_mods": { "str_mod": 2 },
     "stomach_size_multiplier": 1.5,
     "weight_capacity_modifier": 1.05
@@ -4261,10 +4264,10 @@
     "prereqs": [ "LARGE" ],
     "prereqs2": [ "STR_UP", "STR_UP_2", "STR_UP_3", "STR_UP_4" ],
     "cancels": [ "SMALL", "SMALL2" ],
-    "threshreq": [ "THRESH_URSINE", "THRESH_CATTLE", "THRESH_LIZARD", "THRESH_CHIMERA" ],
+    "threshreq": [ "THRESH_URSINE", "THRESH_CATTLE", "THRESH_LIZARD" ],
     "changes_to": [ "HUGE" ],
     "leads_to": [ "MUT_TOUGH" ],
-    "category": [ "URSINE", "CATTLE", "LIZARD", "CHIMERA" ],
+    "category": [ "URSINE", "CATTLE", "LIZARD" ],
     "passive_mods": { "str_mod": 2 },
     "stomach_size_multiplier": 1.5,
     "weight_capacity_modifier": 1.05
