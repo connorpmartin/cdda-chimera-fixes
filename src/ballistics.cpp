@@ -53,9 +53,10 @@ static void drop_or_embed_projectile( const dealt_projectile_attack &attack )
     if( effects.count( "SHATTER_SELF" ) ) {
         // Drop the contents, not the thrown item
         add_msg_if_player_sees( pt, _( "The %s shatters!" ), drop_item.tname() );
-
-        // copies the drop item to spill the contents
-        item( drop_item ).spill_contents( pt );
+        drop_item.visit_items( [&pt]( const item * it, item * ) {
+            get_map().add_item_or_charges( pt, *it );
+            return VisitResponse::NEXT;
+        } );
 
         // TODO: Non-glass breaking
         // TODO: Wine glass breaking vs. entire sheet of glass breaking
