@@ -876,7 +876,7 @@
     "id": "workbench",
     "name": { "str": "workbench" },
     "symbol": "#",
-    "looks_like": "veh_table_wood",
+    "looks_like": "f_table",
     "categories": [ "utility" ],
     "color": "red",
     "broken_symbol": "#",
